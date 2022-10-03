@@ -1,0 +1,129 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 100%;
+}
+
+/*---navbar---*/
+
+.navbar {
+  background: transparent;
+}
+.navbar-brand {
+  font-size: 2em;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+.navbar a {
+  font-weight: light;
+  font-size: 1.4em;
+  color: #ffffff;
+}
+.navbar a.active {
+  font-weight: bolder;
+  font-size: 1.4em;
+  color: #ffffff !important;
+}
+.navbar a:hover {
+  color: #04b831 !important;
+}
+
+header.cover {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(46, 46, 46, 0.3), rgba(0, 0, 0, 0.9)),
+    url(https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
+      no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.title span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #04b831;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+  font-size: 10rem;
+  font-family: "Vollkorn SC", serif;
+}
+.title div {
+  font-size: 10rem;
+  font-family: "Vollkorn SC", serif;
+}
+@keyframes flip {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-40px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(0);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.about {
+  position: relative;
+  background: linear-gradient(
+      to right,
+      rgba(22, 22, 22, 0.8),
+      rgba(22, 22, 22, 0.8)
+    ),
+    url(https://images.unsplash.com/photo-1491336477066-31156b5e4f35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80)
+      no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.about p {
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 3rem;
+}
+
+.cast {
+  text-align: start;
+}
+.cast img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+.cast p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.cast h3 {
+  margin-top: 1rem;
+}
+.footer {
+  background-color: #000;
+}
+.footer .socials {
+  font-size: 2rem;
+  color: #fff;
+}
+.socials i:hover {
+  color: #04b831;
+  cursor: pointer;
+}
